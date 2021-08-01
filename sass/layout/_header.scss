@@ -1,104 +1,125 @@
-.navigation-bar {
-  font-family: var(--main-font-family);
-  font-style: var(--main-font-style);
-  font-weight: var(--main-font-weight);
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-  display: flex;
-  margin-top: 24px;
-
-  & a {
-    color: var(--color-for-links-of-navigation);
-  }
-
-  &__contacts,
-  &__portfolio,
-  &__studio {
-    color: var(--main-color);
-    transition-duration: 250ms;
-    transition-timing-function: (0.4, 0, 0.2, 1);
-    &:hover {
-      color: var(--main-color-hover-focus);
-    }
-    &:focus {
-      color: var(--main-color-hover-focus);
-    }
-  }
-  &__mail-phone {
-    font-family: var(--secondary-main-font-family);
+  //320-767
+  @media screen and (max-width: 767px) {
+  .navigation-bar {
+    font-family: var(--main-font-family);
     font-style: var(--main-font-style);
-    font-weight: var(--thread-font-weight);
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.02em;
-    color: var(--secondary-color-for-text);
+    font-weight: var(--main-font-weight);
+    font-size: 24px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
     display: flex;
-    flex-direction: row-reverse;
-    margin-right: 30px;
-    display: flex;
-    flex-direction: row-reverse;
-    transition-duration: 250ms;
-    transition-timing-function: (0.4, 0, 0.2, 1);
-    &:hover {
-      color: var(--main-color-hover-focus);
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-left: 30px;
+
+    & a {
+      color: var(--color-for-links-of-navigation);
     }
-    &:hover svg {
-      fill: var(--main-color-hover-focus);
+
+    &__contacts,
+    &__portfolio,
+    &__studio {
+      display: none;
     }
-    &:focus {
-      color: var(--main-color-hover-focus);
+
+    &__mail-phone {
+      display: none;
     }
-    &:focus svg {
-      fill: var(--main-color-hover-focus);
+    &__mobile-menu{
+      
     }
-    &:focus {
-      fill: var(--main-color-hover-focus);
+    &__menu-position{
+      border: none;
+      background-color: inherit;
+      margin-right: 15px;
     }
   }
-}
-
-.position-header {
-  display: flex;
-  height: 80px;
-}
-
-.navigation-link {
-  font-family: var(--secondary-main-font-family);
-  font-style: var(--main-font-style);
-  font-weight: var(--thread-font-weight);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  color: var(--main-color);
-  display: flex;
-  margin-top: 8px;
-  margin-left: 93px;
-
-  &__position:not(:last-child) {
-    margin-right: 50px;
+  .position-header {
+    height: 60px;
   }
-}
-
-.mail-phone {
-  &__position {
-    display: flex;
-    margin-top: 28px;
-    margin-left: auto;
-    height: 20px;
-  }
-  &__logo {
-    margin-right: 10px;
-    fill: var(--secondary-color-for-text);
-  }
-}
-
-.position-link__mail {
-  display: flex;
-  margin-right: 30px;
 }
 
 .logo__three-letters {
   color: var(--main-color-hover-focus);
 }
+
+//768-1199
+@media screen and (min-width: 768px) {
+  .navigation-bar {
+    font-family: var(--main-font-family);
+    font-style: var(--main-font-style);
+    font-weight: var(--main-font-weight);
+    font-size: 24px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+    margin-left: 15px;
+
+    & a {
+      color: var(--color-for-links-of-navigation);
+    }
+
+    &__contacts,
+    &__portfolio,
+    &__studio {
+      display: none;
+    }
+
+    &__mail-phone {
+      display: none;
+    }
+    &__mobile-menu{
+      
+    }
+    &__menu-position{
+      border: none;
+      background-color: inherit;
+      margin-right: 15px;
+    }
+  }
+
+  .position-header {
+    height: 80px;
+  }
+}
+
+// .navigation-link {
+//   font-family: var(--secondary-main-font-family);
+//   font-style: var(--main-font-style);
+//   font-weight: var(--thread-font-weight);
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   color: var(--main-color);
+//   display: flex;
+//   margin-top: 8px;
+//   margin-left: 93px;
+
+//   &__position:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
+
+// .mail-phone {
+//   &__position {
+//     display: flex;
+//     margin-top: 28px;
+//     margin-left: auto;
+//     height: 20px;
+//   }
+//   &__logo {
+//     margin-right: 10px;
+//     fill: var(--secondary-color-for-text);
+//   }
+// }
+
+// .position-link__mail {
+//   display: flex;
+//   margin-right: 30px;
+// }
+
+

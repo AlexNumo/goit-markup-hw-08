@@ -1,58 +1,111 @@
-.ways-section-position {
-  padding-top: 94px;
-  padding-bottom: 94px;
+@media screen and (max-width: 767px) {
+  .ways-position {
+    display: flex;
+    flex-direction: column;
+  }
+  .ways-logo-position {
+    display: flex;
+    background-color: var(--background-color-ways-logo);
+    border-radius: 4px;
+    width: 450px;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  .ways {
+    font-family: var(--secondary-main-font-family);
+    font-style: var(--main-font-style);
+    font-weight: var(--main-font-weight);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--main-color);
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+  }
+  .ways-option {
+    font-family: var(--secondary-main-font-family);
+    font-style: var(--main-font-style);
+    font-weight: var(--secondary-font-weight);
+    font-size: 14px;
+    line-height: 1.72;
+    letter-spacing: 0.03em;
+    color: var(--secondary-color-for-text);
+    text-transform: none;
+    margin-bottom: 30px;
+  }
+  .ways-card-position {
+    width: inherit;
+  }
+
+  .ways-section-position {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .ways-logo {
+    background-color: var(--background-color-ways-logo);
+    border-radius: 4px;
+  }
 }
 
-.hiden-ways {
-  display: none;
-}
+// .ways-section-position {
+//   padding-top: 94px;
+//   padding-bottom: 94px;
+// }
 
-.ways-position {
-  display: flex;
-}
+// .hiden-ways {
+//   display: none;
+// }
 
-.ways-card-position {
-  width: 270px;
-    &:not(:nth-last-child(1)) {
-      margin-right: 30px;
-    }
-}
+// .ways-position {
+//   display: flex;
+// }
 
-.ways {
-  font-family: var(--secondary-main-font-family);
-  font-style: var(--main-font-style);
-  font-weight: var(--main-font-weight);
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--main-color);
-  margin-bottom: 10px;
-}
+// .ways-card-position {
+//   width: 270px;
+//     &:not(:nth-last-child(1)) {
+//       margin-right: 30px;
+//     }
+// }
 
-.ways-option {
-  font-family: var(--secondary-main-font-family);
-  font-style: var(--main-font-style);
-  font-weight: var(--secondary-font-weight);
-  font-size: 14px;
-  line-height: 24px;
-  letter-spacing: 0.03em;
-  color: var(--secondary-color-for-text);
-  text-transform: none;
-}
+// .ways {
+//   font-family: var(--secondary-main-font-family);
+//   font-style: var(--main-font-style);
+//   font-weight: var(--main-font-weight);
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.03em;
+//   text-transform: uppercase;
+//   color: var(--main-color);
+//   margin-bottom: 10px;
+// }
 
-.ways-logo {
-  background-color: var(--background-color-ways-logo);
-  border-radius: 4px;
-}
+// .ways-option {
+//   font-family: var(--secondary-main-font-family);
+//   font-style: var(--main-font-style);
+//   font-weight: var(--secondary-font-weight);
+//   font-size: 14px;
+//   line-height: 1.72;
+//   letter-spacing: 0.03em;
+//   color: var(--secondary-color-for-text);
+//   text-transform: none;
+// }
 
-.ways-logo-position {
-  display: flex;
-  background-color: var(--background-color-ways-logo);
-  border-radius: 4px;
-  width: 270px;
-  height: 120px;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 30px;
-}
+// .ways-logo {
+//   background-color: var(--background-color-ways-logo);
+//   border-radius: 4px;
+// }
+
+// .ways-logo-position {
+//   display: flex;
+//   background-color: var(--background-color-ways-logo);
+//   border-radius: 4px;
+//   width: 270px;
+//   height: 120px;
+//   justify-content: center;
+//   align-items: center;
+//   margin-bottom: 30px;
+// }
