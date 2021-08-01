@@ -1,0 +1,104 @@
+.navigation-bar {
+  font-family: var(--main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  display: flex;
+  margin-top: 24px;
+
+  & a {
+    color: var(--color-for-links-of-navigation);
+  }
+
+  &__contacts,
+  &__portfolio,
+  &__studio {
+    color: var(--main-color);
+    transition-duration: 250ms;
+    transition-timing-function: (0.4, 0, 0.2, 1);
+    &:hover {
+      color: var(--main-color-hover-focus);
+    }
+    &:focus {
+      color: var(--main-color-hover-focus);
+    }
+  }
+  &__mail-phone {
+    font-family: var(--secondary-main-font-family);
+    font-style: var(--main-font-style);
+    font-weight: var(--thread-font-weight);
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--secondary-color-for-text);
+    display: flex;
+    flex-direction: row-reverse;
+    margin-right: 30px;
+    display: flex;
+    flex-direction: row-reverse;
+    transition-duration: 250ms;
+    transition-timing-function: (0.4, 0, 0.2, 1);
+    &:hover {
+      color: var(--main-color-hover-focus);
+    }
+    &:hover svg {
+      fill: var(--main-color-hover-focus);
+    }
+    &:focus {
+      color: var(--main-color-hover-focus);
+    }
+    &:focus svg {
+      fill: var(--main-color-hover-focus);
+    }
+    &:focus {
+      fill: var(--main-color-hover-focus);
+    }
+  }
+}
+
+.position-header {
+  display: flex;
+  height: 80px;
+}
+
+.navigation-link {
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--main-color);
+  display: flex;
+  margin-top: 8px;
+  margin-left: 93px;
+
+  &__position:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.mail-phone {
+  &__position {
+    display: flex;
+    margin-top: 28px;
+    margin-left: auto;
+    height: 20px;
+  }
+  &__logo {
+    margin-right: 10px;
+    fill: var(--secondary-color-for-text);
+  }
+}
+
+.position-link__mail {
+  display: flex;
+  margin-right: 30px;
+}
+
+.logo__three-letters {
+  color: var(--main-color-hover-focus);
+}

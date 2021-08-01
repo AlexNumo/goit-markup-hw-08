@@ -1,0 +1,91 @@
+.our-team-position {
+  background-color: var(--background-color-our-team);
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.member-card {
+  background-color: var(--background-color-member-card);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-members {
+  display: flex;
+  justify-content: space-between;
+}
+
+.our-team {
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-bottom: 50px;
+}
+
+.team-member {
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--thread-font-weight);
+  font-size: 16px;
+  line-height: 1, 19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+  margin-top: 30px;
+}
+
+.member-profession {
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--secondary-font-weight);
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-color-for-text);
+  margin-top: 10px;
+}
+
+.member-logo-position {
+  display: flex;
+  margin: 16px 10px 30px 32px;
+}
+
+.member-logo-background {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+  transition-duration: 250ms;
+  transition-timing-function: (0.4, 0, 0.2, 1);
+
+    &:not(:nth-last-child(1)) {
+      margin-right: 10px;
+    }
+
+    &:hover,
+    &:focus {
+      background-color: var(--main-color-hover-focus);
+}
+    &:hover .member-logo,
+    &:focus .member-logo {
+      fill: var(--background-color-member-card);
+}
+
+
+}
+
+.member-logo {
+  fill: var(--color-clients-logo);
+  transition-duration: 250ms;
+  transition-timing-function: (0.4, 0, 0.2, 1);
+}
+

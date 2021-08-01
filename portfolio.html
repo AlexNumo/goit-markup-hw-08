@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="ru">
+    
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная</title>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <!--==NORMALIZE==-->
+    <link rel="stylesheet" href="./css/main.min.css">
+    <!--==MY STYLES==-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--==GOOGLE FONTS==-->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <!--==GOOGLE FONTS==-->
+</head>
+
+<body>
+    <!--========HEADER========================-->
+<header>
+    <div class="position-header container">
+        <nav class="navigation-bar">
+            <a href="index.html"><span class="logo__three-letters">Web</span>Studio</a>
+            <ul class="navigation-link">
+                <li class="navigation-link__position"><a class="navigation-bar__studio"
+                        href="index.html">Студия</a></li>
+                <li class="navigation-link__position active-page"><a class="navigation-bar__portfolio"
+                        href="portfolio.html">Портфолио</a></li>
+                <li class="navigation-link__position"><a class="navigation-bar__contacts" href="">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="mail-phone__position">
+            <ul class="position-link__mail">
+                <li>
+                    <a class="navigation-bar__mail-phone" href="mailto:info@devstudio.com">info@devstudio.com
+                        <svg class="mail-phone__logo" width="16px" height="12px">
+                            <use href="./img/sprite.svg#mail"></use>
+                        </svg>
+                    </a>
+                </li>
+                <li><a class="navigation-bar__mail-phone" href="tel:+380961111111">+38 096 111 11 11
+                        <svg class="mail-phone__logo" width=10px height=16px>
+                            <use href="./img/sprite.svg#phone"></use>
+                        </svg>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+
+<!--========MAIN========================-->
+
+    <section class="portfolio__background">
+        <h2 class="hiden-h2">Контент, который мы предлагаем</h2>
+        <div class="container">
+            <ul class="button__position">
+                <li class="button__position-bort">
+                    <button class="portfolio__button-service" type="button">Все</button>
+                </li>
+                <li class="button__position-bort">
+                    <button class="portfolio__button-service" type="button">Веб-сайты</button>
+                </li>
+                <li class="button__position-bort">
+                    <button class="portfolio__button-service" type="button">Приложения</button>
+                </li>
+                <li class="button__position-bort">
+                    <button class="portfolio__button-service" type="button">Дизайн</button>
+                </li>
+                <li class="button__position-bort">
+                    <button class="portfolio__button-service" type="button">Маркетинг</button>
+                </li>
+            </ul>
+
+            <ul class="content-position content-maket">
+                <li class="content__position-block">
+                    <a class="animation-maket-overlay" href="#">
+                        <div class="hiden-overlay">
+                            <img src="./img/portfolio/project1.jpg" alt="Ноутбук с фотографиями трех людей" width="370" height="294">
+                            <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
+                            шпионажа и атак на защищённые сервера конкурентов.</p>
+                        </div>
+                        <div class="content__border">
+                            <p class="content__name">Технокряк</p>
+                            <p class="direction">Веб-сайт</p>
+                            
+                        </div>
+                    </a>
+                </li>
+                <li class="content__position-block">
+                    <a class="animation-maket-overlay" href="#">
+                        <div class="hiden-overlay">
+                            <img src="./img/portfolio/project2.jpg" alt="Два баскетболиста с мячом" width="370" height="294">
+                            <p class="overlay"></p>
+                        </div>
+                        <div class="content__border">
+                            <p class="content__name">Постер New Orlean vs Golden Star</p>
+                            <p class="direction">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="content__position-block">
+                    <a class="animation-maket-overlay" href="#">
+                        <div class="hiden-overlay">
+                            <img src="./img/portfolio/project3.jpg" alt="Эмблема ресторана Seafood" width="370" height="294">
+                            <p class="overlay"></p>
+                        </div>
+                        <div class="content__border">
+                            <p class="content__name">Ресторан Seafood</p>
+                            <p class="direction">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="content__position-block">
+                    <a class="animation-maket-overlay" href="#">
+                        <div class="hiden-overlay">
+                            <img src="./img/portfolio/project4.jpg" alt="Наушники" width="370" height="294">
+                            <p class="overlay"></p>
+                        </div>
+                        <div class="content__border">
+                            <p class="content__name">Проект Prime</p>
+                            <p class="direction">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="content__position-block">
+                    <a class="animation-maket-overlay" href="#">
+                        <div class="hiden-overlay">
+                            <img src="./img/portfolio/project5.jpg" alt="Две коробки с надписью BOX" width="370" height="294">
+                            <p class="overlay"></p>
+                        </div>
+                        <div class="content__border">
+                            <p class="content__name">Проект Boxes</p>
+                            <p class="direction">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="content__position-block">
+                    <a class="animation-maket-overlay" href="#">
+                        <div class="hiden-overlay">
+                            <img src="./img/portfolio/project6.jpg" alt="Монитор с изображением сайта" width="370" height="294">
+                            <p class="overlay"></p>
+                        </div>
+                        <div class="content__border">
+                            <p class="content__name">Inspiration has no Borders</p>
+                            <p class="direction">Веб-сайт</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="content__position-block">
+                    <a class="animation-maket-overlay" href="#">
+                        <div class="hiden-overlay">
+                            <img src="./img/portfolio/project7.jpg" alt="Открытая книга" width="370" height="294">
+                            <p class="overlay"></p>
+                        </div>
+                        <div class="content__border">
+                            <p class="content__name">Издание Limited Edition</p>
+                            <p class="direction">Дизайн</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="content__position-block">
+                    <a class="animation-maket-overlay" href="#">
+                        <div class="hiden-overlay">
+                            <img src="./img/portfolio/project8.jpg" alt="Этикетка с надписью LABEL TAG" width="370" height="294">
+                            <p class="overlay"></p>
+                        </div>
+                        <div class="content__border">
+                            <p class="content__name">Проект LAB</p>
+                            <p class="direction">Маркетинг</p>
+                        </div>
+                    </a>
+                </li>
+                <li class="content__position-block">
+                    <a class="animation-maket-overlay" href="#">
+                        <div class="hiden-overlay">
+                            <img src="./img/portfolio/project9.jpg" alt="Ноутбук за которым работает человек" width="370" height="294">
+                            <p class="overlay"></p>
+                        </div>
+                        <div class="content__border">
+                            <p class="content__name">Growing Business</p>
+                            <p class="direction">Приложение</p>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div> 
+    </section>
+
+    <!--========FOOTER========================-->      
+    <footer class="footer__position">
+        <div class="container">
+            <div class="footer__position-address-link">
+                <a class="footer-link" href="index.html"><span class="logo__three-letters">Web</span>Studio</a>
+                <h2 class="footer__link-sign">присоединяйтесь</h2>
+                <p class="footer__subscribe-position">Подпишитесь на рассылку</p>
+            </div>
+            <div class="footer__position-link-sign">
+                <address>
+                    <p class="footer__living">г. Киев, пр-т Леси Украинки, 26</p>
+                    <ul>
+                        <li class="footer-address__mail-position"><a class="address-mail"
+                                href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                        <li class="footer-address__phone-position"><a class="address-phone" href="tel:+380961111111">+38 096
+                                111 11 11</a></li>
+                    </ul>
+                </address>
+                <div class="footer__sign-logo-position">
+                    <a class="footer__sign-logo-background" href="./">
+                        <svg class="footer__sign-logo" width=20px height=20px>
+                            <use href="./img/sprite.svg#instagram"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__sign-logo-background" href="./">
+                        <svg class="footer__sign-logo" width=20px height=20px>
+                            <use href="./img/sprite.svg#twitter"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__sign-logo-background" href="./">
+                        <svg class="footer__sign-logo" width=20px height=20px>
+                            <use href="./img/sprite.svg#facebook"></use>
+                        </svg>
+                    </a>
+                    <a class="footer__sign-logo-background" href="./">
+                        <svg class="footer__sign-logo" width=20px height=20px>
+                            <use href="./img/sprite.svg#linkedin"></use>
+                        </svg>
+                    </a>
+                </div>
+                <label class="footer-subscribe">
+                    <span>
+                        <input type="text" class="footer-subscribe__input" name="mail-client-subscribe" minlength="5"
+                            pattern="[a-zA-Za-0-9]-[@]-[a-zA-Za]-[.]-[a-zA-Za]" placeholder="E-mail"
+                            title="Почта должна содержать символы латиницы с использованием знака @" required>
+                    </span>
+                </label>
+                <button type="submit" class="footer-subscribe__button">Подписаться
+                    <svg class="footer-subscribe__icon" width=24px height=24px>
+                        <use href="./img/sprite.svg#send"></use>
+                    </svg>
+                </button>
+                <!--<input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
+                        <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#"
+                                class="modal-form-label-link">Условия договора</a></label>
+                        <button type="submit" class="modal-form-button">Отправить</button>-->
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

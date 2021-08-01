@@ -1,0 +1,53 @@
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.clients-name-section {
+  font-family: var(--secondary-main-font-family);
+  font-style: var(--main-font-style);
+  font-weight: var(--main-font-weight);
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
+}
+
+.clients-position {
+  display: flex;
+}
+
+.clients-logo__position {
+  display: flex;
+  margin-top: 50px;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  transition-duration: 250ms;
+  transition-timing-function: (0.4, 0, 0.2, 1);
+
+  &:not(:nth-last-child(1)) {
+    margin-right: 30px;
+  }
+  &:hover .clients-logo,
+  &:focus .clients-logo {
+    fill: var(--main-color-hover-focus);
+  }
+}
+
+.clients-logo {
+  fill: var(--color-clients-logo);
+  transition-duration: 250ms;
+  transition-timing-function: (0.4, 0, 0.2, 1);
+
+  &__position:hover,
+  &__position:focus {
+    border: 1px solid;
+    border-color: var(--main-color-hover-focus);
+  }
+}
