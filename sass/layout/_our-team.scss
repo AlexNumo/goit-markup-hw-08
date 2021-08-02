@@ -4,6 +4,7 @@
     padding-top: 60px;
     padding-bottom: 60px;
   }
+
   .member-mobile-photo{
     width: 450px;
     height: 460px;
@@ -15,13 +16,13 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
+    margin-left: 15px;
   }
 
   .our-team-members {
     display: flex;
     flex-direction: column;
-
-    width: 450px;
+    width: 465px;
   }
 
   .our-team {

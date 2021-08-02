@@ -1,13 +1,20 @@
 @media screen and (max-width: 767px) {
+  .ways-section-position {
+    padding-top: 60px;
+    padding-bottom: 60px;    
+  }
+  
   .ways-position {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
+
   .ways-logo-position {
     display: flex;
     background-color: var(--background-color-ways-logo);
     border-radius: 4px;
-    width: 420px;
+    width: 450px;
     height: 120px;
     justify-content: center;
     align-items: center;
@@ -39,13 +46,9 @@
   }
   .ways-card-position {
     width: inherit;
+    margin-left: 15px;
   }
 
-  .ways-section-position {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    width: 450px;
-  }
   .ways-logo {
     background-color: var(--background-color-ways-logo);
     border-radius: 4px;

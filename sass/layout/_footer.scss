@@ -186,4 +186,9 @@
     fill: var(--color-text-for-dark-theme);
     margin-left: 10px;
   }
+  .footer__input-position{
+    display: flex;
+    justify-content: center;
+  }
+
 }

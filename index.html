@@ -24,12 +24,11 @@
                     <li class="navigation-link__position"><a class="navigation-bar__contacts" href="">Контакты</a></li>
                 </ul>
                 <div class="navigation-bar__mobile-menu">
-                    <button class="navigation-bar__menu-position" type="button">
+                    <button class="navigation-bar__menu-position" type="button" data-menu-open>
                         <svg width="24px" height="16px">
                             <use href="./img/sprite.svg#menu"></use>
                         </svg>
                     </button>
-                
                 </div>
             </nav>
                 <div class="mail-phone__position">
@@ -313,7 +312,7 @@
                     </div>
                     <label class="footer-subscribe">
                         <p class="footer__subscribe-position">Подпишитесь на рассылку</p>
-                        <span>
+                        <span class="footer__input-position">
                             <input type="text" class="footer-subscribe__input" name="mail-client-subscribe" minlength="5"
                                 pattern="[a-zA-Za-0-9]-[@]-[a-zA-Za]-[.]-[a-zA-Za]" placeholder="E-mail"
                                 title="Почта должна содержать символы латиницы с использованием знака @" required>
@@ -336,8 +335,8 @@
 
     <!--==============================BACKDROP==========================-->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
-        <div class="modal" >
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
             <button class="close-button" type="button" data-modal-close>
                 <svg width=11px height=11px>
                     <use href="./img/sprite.svg#close"></use>
@@ -389,7 +388,21 @@
             </form>
         </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+<!--==========MOBILE MENU================================-->
+    <div class="menu is-open" data-menu>
+        <div class="mobile-menu">
+            <button class="close-button-menu" type="button" data-menu-close>
+                <svg width=11px height=11px>
+                    <use href="./img/sprite.svg#close"></use>
+                </svg>
+            </button>
+        </div>
+
+    </div>
+
+
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
 </body>
 
 </html>

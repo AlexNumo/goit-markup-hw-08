@@ -349,44 +349,6 @@ textarea {
     color: var(--main-color);
     display: flex;
     justify-content: space-between;
-    margin-top: 16px;
-    margin-left: 30px;
-  }
-  .navigation-bar a {
-    color: var(--color-for-links-of-navigation);
-  }
-  .navigation-bar__contacts, .navigation-bar__portfolio, .navigation-bar__studio {
-    display: none;
-  }
-  .navigation-bar__mail-phone {
-    display: none;
-  }
-  .navigation-bar__menu-position {
-    border: none;
-    background-color: inherit;
-    margin-right: 15px;
-  }
-  .position-header {
-    height: 60px;
-  }
-}
-
-.logo__three-letters {
-  color: var(--main-color-hover-focus);
-}
-
-@media screen and (min-width: 768px) {
-  .navigation-bar {
-    font-family: var(--main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--main-font-weight);
-    font-size: 24px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
     margin-left: 15px;
   }
   .navigation-bar a {
@@ -398,14 +360,26 @@ textarea {
   .navigation-bar__mail-phone {
     display: none;
   }
+  .navigation-bar__mobile-menu {
+    margin-left: 236px;
+  }
   .navigation-bar__menu-position {
     border: none;
     background-color: inherit;
     margin-right: 15px;
   }
   .position-header {
-    height: 80px;
+    padding-bottom: 16px;
+    padding-top: 16px;
   }
+  .navigation-bar__menu-position:hover,
+  .navigation-bar__menu-position:focus {
+    fill: var(--main-color-hover-focus);
+  }
+}
+
+.logo__three-letters {
+  color: var(--main-color-hover-focus);
 }
 
 @media screen and (max-width: 767px) {
@@ -439,15 +413,20 @@ textarea {
 }
 
 @media screen and (max-width: 767px) {
+  .ways-section-position {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
   .ways-position {
     display: flex;
     flex-direction: column;
+    justify-content: center;
   }
   .ways-logo-position {
     display: flex;
     background-color: var(--background-color-ways-logo);
     border-radius: 4px;
-    width: 420px;
+    width: 450px;
     height: 120px;
     justify-content: center;
     align-items: center;
@@ -479,11 +458,7 @@ textarea {
   }
   .ways-card-position {
     width: inherit;
-  }
-  .ways-section-position {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    width: 450px;
+    margin-left: 15px;
   }
   .ways-logo {
     background-color: var(--background-color-ways-logo);
@@ -557,11 +532,12 @@ textarea {
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
+    margin-left: 15px;
   }
   .our-team-members {
     display: flex;
     flex-direction: column;
-    width: 450px;
+    width: 465px;
   }
   .our-team {
     font-family: var(--secondary-main-font-family);
@@ -836,6 +812,10 @@ textarea {
   .footer-subscribe__icon {
     fill: var(--color-text-for-dark-theme);
     margin-left: 10px;
+  }
+  .footer__input-position {
+    display: flex;
+    justify-content: center;
   }
 }
 

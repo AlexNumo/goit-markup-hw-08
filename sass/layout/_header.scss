@@ -10,53 +10,6 @@
     color: var(--main-color);
     display: flex;
     justify-content: space-between;
-    margin-top: 16px;
-    margin-left: 30px;
-
-    & a {
-      color: var(--color-for-links-of-navigation);
-    }
-
-    &__contacts,
-    &__portfolio,
-    &__studio {
-      display: none;
-    }
-
-    &__mail-phone {
-      display: none;
-    }
-    &__mobile-menu{
-      
-    }
-    &__menu-position{
-      border: none;
-      background-color: inherit;
-      margin-right: 15px;
-    }
-  }
-  .position-header {
-    height: 60px;
-  }
-}
-
-.logo__three-letters {
-  color: var(--main-color-hover-focus);
-}
-
-//768-1199
-@media screen and (min-width: 768px) {
-  .navigation-bar {
-    font-family: var(--main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--main-font-weight);
-    font-size: 24px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-    display: flex;
-    justify-content: space-between;
-    margin-top: 16px;
     margin-left: 15px;
 
     & a {
@@ -72,20 +25,76 @@
     &__mail-phone {
       display: none;
     }
+
     &__mobile-menu{
-      
+      margin-left: 236px;
     }
+
     &__menu-position{
       border: none;
       background-color: inherit;
       margin-right: 15px;
     }
   }
-
   .position-header {
-    height: 80px;
+    padding-bottom: 16px;
+    padding-top: 16px;
   }
+
+  .navigation-bar__menu-position:hover,
+  .navigation-bar__menu-position:focus{
+    fill: var(--main-color-hover-focus);
+  }
+
 }
+
+.logo__three-letters {
+  color: var(--main-color-hover-focus);
+}
+
+
+//768-1199
+// @media screen and (min-width: 768px) {
+//   .navigation-bar {
+//     font-family: var(--main-font-family);
+//     font-style: var(--main-font-style);
+//     font-weight: var(--main-font-weight);
+//     font-size: 24px;
+//     line-height: 1.19;
+//     letter-spacing: 0.03em;
+//     color: var(--main-color);
+//     display: flex;
+//     justify-content: space-between;
+//     margin-top: 16px;
+//     margin-left: 15px;
+
+//     & a {
+//       color: var(--color-for-links-of-navigation);
+//     }
+
+//     &__contacts,
+//     &__portfolio,
+//     &__studio {
+//       display: none;
+//     }
+
+//     &__mail-phone {
+//       display: none;
+//     }
+//     &__mobile-menu{
+      
+//     }
+//     &__menu-position{
+//       border: none;
+//       background-color: inherit;
+//       margin-right: 15px;
+//     }
+//   }
+
+//   .position-header {
+//     height: 80px;
+//   }
+// }
 
 // .navigation-link {
 //   font-family: var(--secondary-main-font-family);
