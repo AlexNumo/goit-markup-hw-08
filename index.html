@@ -279,17 +279,16 @@
         <div class="container">
             <div class="footer__position-address-link">
                 <a class="footer-link" href="index.html"><span class="logo__three-letters">Web</span>Studio</a>
-                <h2 class="footer__link-sign">присоединяйтесь</h2>
-                <p class="footer__subscribe-position">Подпишитесь на рассылку</p>
             </div>
             <div class="footer__position-link-sign">
-                <address>
+                <address class="address-mobile-position">
                     <p class="footer__living">г. Киев, пр-т Леси Украинки, 26</p>
                     <ul>    
                         <li class="footer-address__mail-position"><a class="address-mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                         <li class="footer-address__phone-position"><a class="address-phone" href="tel:+380961111111">+38 096 111 11 11</a></li>
                     </ul>
                 </address>
+                <h2 class="footer__link-sign">присоединяйтесь</h2>
                     <div class="footer__sign-logo-position">
                         <a class="footer__sign-logo-background" href="./">
                             <svg class="footer__sign-logo" width=20px height=20px>
@@ -313,17 +312,20 @@
                         </a>
                     </div>
                     <label class="footer-subscribe">
+                        <p class="footer__subscribe-position">Подпишитесь на рассылку</p>
                         <span>
                             <input type="text" class="footer-subscribe__input" name="mail-client-subscribe" minlength="5"
                                 pattern="[a-zA-Za-0-9]-[@]-[a-zA-Za]-[.]-[a-zA-Za]" placeholder="E-mail"
                                 title="Почта должна содержать символы латиницы с использованием знака @" required>
                         </span>
                     </label>
-                    <button type="submit" class="footer-subscribe__button">Подписаться
-                        <svg class="footer-subscribe__icon" width=24px height=24px>
-                            <use href="./img/sprite.svg#send"></use>
-                        </svg>
-                    </button>
+                    <div class="footer-subscribe__button-position">
+                        <button type="submit" class="footer-subscribe__button">Подписаться
+                            <svg class="footer-subscribe__icon" width=24px height=24px>
+                                <use href="./img/sprite.svg#send"></use>
+                            </svg>
+                        </button>
+                    </div>
                     <!--<input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
                     <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#"
                             class="modal-form-label-link">Условия договора</a></label>
