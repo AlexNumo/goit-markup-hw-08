@@ -1,44 +1,49 @@
-.our-work-position {
-  padding-bottom: 22px;
+@media screen and (max-width: 767px) {
+  .our-work-position {
+    display: none;
+  }
 }
 
-.our-work {
-  font-family: var(--secondary-main-font-family);
-  font-style: var(--main-font-style);
-  font-weight: var(--main-font-weight);
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--main-color);
-  display: flex;
-  justify-content: center;
-}
+ .our-work-position {
+    padding-bottom: 22px;
+  }
+  .our-work {
+    font-family: var(--secondary-main-font-family);
+    font-style: var(--main-font-style);
+    font-weight: var(--main-font-weight);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+  }
 
-.our-work-image {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 50px;
-}
+  .our-work-image {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+  }
 
-.our-work-description {
-  font-family: var(--secondary-main-font-family);
-  font-style: var(--main-font-style);
-  font-weight: var(--main-font-weight);
-  font-size: 14px;
-  line-height: 1.14;
-  text-align: center;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-  color: var(--color-text-for-dark-theme);
-  background-color: rgba(47, 48, 58, 0.8);
-  padding-top: 27px;
-  padding-left: 83px;
-  padding-right: 82px;
-  top: 0px;
-  left: 0px;
-  width: 100%;
-  height: 70px;
-  overflow: auto;
-  transform: translateY(-105%);
-}
+  .our-work-description {
+    font-family: var(--secondary-main-font-family);
+    font-style: var(--main-font-style);
+    font-weight: var(--main-font-weight);
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-text-for-dark-theme);
+    background-color: rgba(47, 48, 58, 0.8);
+    padding-top: 27px;
+    padding-left: 83px;
+    padding-right: 82px;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 70px;
+    overflow: auto;
+    transform: translateY(-105%);
+  }
