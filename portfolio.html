@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Главная</title>
+    <title>Портфолио</title>
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
     <!--==NORMALIZE==-->
@@ -21,37 +21,44 @@
 
 <body>
     <!--========HEADER========================-->
-<header>
-    <div class="position-header container">
-        <nav class="navigation-bar">
-            <a href="index.html"><span class="logo__three-letters">Web</span>Studio</a>
-            <ul class="navigation-link">
-                <li class="navigation-link__position"><a class="navigation-bar__studio"
-                        href="index.html">Студия</a></li>
-                <li class="navigation-link__position active-page"><a class="navigation-bar__portfolio"
-                        href="portfolio.html">Портфолио</a></li>
-                <li class="navigation-link__position"><a class="navigation-bar__contacts" href="">Контакты</a></li>
-            </ul>
-        </nav>
-        <div class="mail-phone__position">
-            <ul class="position-link__mail">
-                <li>
-                    <a class="navigation-bar__mail-phone" href="mailto:info@devstudio.com">info@devstudio.com
-                        <svg class="mail-phone__logo" width="16px" height="12px">
-                            <use href="./img/sprite.svg#mail"></use>
+    <header>
+        <div class="position-header container">
+            <nav class="navigation-bar">
+                <a href="index.html"><span class="logo__three-letters">Web</span>Studio</a>
+                <ul class="navigation-link">
+                    <li class="navigation-link__position"><a class="navigation-bar__studio"
+                            href="index.html">Студия</a></li>
+                    <li class="navigation-link__position active-page"><a class="navigation-bar__portfolio"
+                            href="portfolio.html">Портфолио</a></li>
+                    <li class="navigation-link__position"><a class="navigation-bar__contacts" href="">Контакты</a></li>
+                </ul>
+                <div class="navigation-bar__mobile-menu">
+                    <button class="navigation-bar__menu-position" type="button" data-menu-open>
+                        <svg width="24px" height="16px">
+                            <use href="./img/sprite.svg#menu"></use>
                         </svg>
-                    </a>
-                </li>
-                <li><a class="navigation-bar__mail-phone" href="tel:+380961111111">+38 096 111 11 11
-                        <svg class="mail-phone__logo" width=10px height=16px>
-                            <use href="./img/sprite.svg#phone"></use>
-                        </svg>
-                    </a>
-                </li>
-            </ul>
+                    </button>
+                </div>
+            </nav>
+            <div class="mail-phone__position">
+                <ul class="position-link__mail">
+                    <li>
+                        <a class="navigation-bar__mail-phone" href="mailto:info@devstudio.com">info@devstudio.com
+                            <svg class="mail-phone__logo" width="16px" height="12px">
+                                <use href="./img/sprite.svg#mail"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li><a class="navigation-bar__mail-phone" href="tel:+380961111111">+38 096 111 11 11
+                            <svg class="mail-phone__logo" width=10px height=16px>
+                                <use href="./img/sprite.svg#phone"></use>
+                            </svg>
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
 
 <!--========MAIN========================-->
 
@@ -80,7 +87,7 @@
                 <li class="content__position-block">
                     <a class="animation-maket-overlay" href="#">
                         <div class="hiden-overlay">
-                            <img src="./img/portfolio/project1.jpg" alt="Ноутбук с фотографиями трех людей" width="370" height="294">
+                            <img src="./img/portfolio/project1.jpg" alt="Ноутбук с фотографиями трех людей" class="content-picture-size" width="370" height="294">
                             <p class="overlay">Технокряк это современная площадка распространения коронавируса. Компании используют эту платформу для цифрового
                             шпионажа и атак на защищённые сервера конкурентов.</p>
                         </div>
@@ -94,7 +101,7 @@
                 <li class="content__position-block">
                     <a class="animation-maket-overlay" href="#">
                         <div class="hiden-overlay">
-                            <img src="./img/portfolio/project2.jpg" alt="Два баскетболиста с мячом" width="370" height="294">
+                            <img src="./img/portfolio/project2.jpg" alt="Два баскетболиста с мячом" class="content-picture-size" width="370" height="294">
                             <p class="overlay"></p>
                         </div>
                         <div class="content__border">
@@ -106,7 +113,7 @@
                 <li class="content__position-block">
                     <a class="animation-maket-overlay" href="#">
                         <div class="hiden-overlay">
-                            <img src="./img/portfolio/project3.jpg" alt="Эмблема ресторана Seafood" width="370" height="294">
+                            <img src="./img/portfolio/project3.jpg" alt="Эмблема ресторана Seafood" class="content-picture-size" width="370" height="294">
                             <p class="overlay"></p>
                         </div>
                         <div class="content__border">
@@ -118,7 +125,7 @@
                 <li class="content__position-block">
                     <a class="animation-maket-overlay" href="#">
                         <div class="hiden-overlay">
-                            <img src="./img/portfolio/project4.jpg" alt="Наушники" width="370" height="294">
+                            <img src="./img/portfolio/project4.jpg" alt="Наушники" class="content-picture-size" width="370" height="294">
                             <p class="overlay"></p>
                         </div>
                         <div class="content__border">
@@ -130,7 +137,7 @@
                 <li class="content__position-block">
                     <a class="animation-maket-overlay" href="#">
                         <div class="hiden-overlay">
-                            <img src="./img/portfolio/project5.jpg" alt="Две коробки с надписью BOX" width="370" height="294">
+                            <img src="./img/portfolio/project5.jpg" alt="Две коробки с надписью BOX" class="content-picture-size" width="370" height="294">
                             <p class="overlay"></p>
                         </div>
                         <div class="content__border">
@@ -142,7 +149,7 @@
                 <li class="content__position-block">
                     <a class="animation-maket-overlay" href="#">
                         <div class="hiden-overlay">
-                            <img src="./img/portfolio/project6.jpg" alt="Монитор с изображением сайта" width="370" height="294">
+                            <img src="./img/portfolio/project6.jpg" alt="Монитор с изображением сайта" class="content-picture-size" width="370" height="294">
                             <p class="overlay"></p>
                         </div>
                         <div class="content__border">
@@ -154,7 +161,7 @@
                 <li class="content__position-block">
                     <a class="animation-maket-overlay" href="#">
                         <div class="hiden-overlay">
-                            <img src="./img/portfolio/project7.jpg" alt="Открытая книга" width="370" height="294">
+                            <img src="./img/portfolio/project7.jpg" alt="Открытая книга" class="content-picture-size" width="370" height="294">
                             <p class="overlay"></p>
                         </div>
                         <div class="content__border">
@@ -166,7 +173,7 @@
                 <li class="content__position-block">
                     <a class="animation-maket-overlay" href="#">
                         <div class="hiden-overlay">
-                            <img src="./img/portfolio/project8.jpg" alt="Этикетка с надписью LABEL TAG" width="370" height="294">
+                            <img src="./img/portfolio/project8.jpg" alt="Этикетка с надписью LABEL TAG" class="content-picture-size" width="370" height="294">
                             <p class="overlay"></p>
                         </div>
                         <div class="content__border">
@@ -178,7 +185,7 @@
                 <li class="content__position-block">
                     <a class="animation-maket-overlay" href="#">
                         <div class="hiden-overlay">
-                            <img src="./img/portfolio/project9.jpg" alt="Ноутбук за которым работает человек" width="370" height="294">
+                            <img src="./img/portfolio/project9.jpg" alt="Ноутбук за которым работает человек" class="content-picture-size" width="370" height="294">
                             <p class="overlay"></p>
                         </div>
                         <div class="content__border">
@@ -196,11 +203,9 @@
         <div class="container">
             <div class="footer__position-address-link">
                 <a class="footer-link" href="index.html"><span class="logo__three-letters">Web</span>Studio</a>
-                <h2 class="footer__link-sign">присоединяйтесь</h2>
-                <p class="footer__subscribe-position">Подпишитесь на рассылку</p>
             </div>
             <div class="footer__position-link-sign">
-                <address>
+                <address class="address-mobile-position">
                     <p class="footer__living">г. Киев, пр-т Леси Украинки, 26</p>
                     <ul>
                         <li class="footer-address__mail-position"><a class="address-mail"
@@ -209,6 +214,7 @@
                                 111 11 11</a></li>
                     </ul>
                 </address>
+                <h2 class="footer__link-sign">присоединяйтесь</h2>
                 <div class="footer__sign-logo-position">
                     <a class="footer__sign-logo-background" href="./">
                         <svg class="footer__sign-logo" width=20px height=20px>
@@ -232,17 +238,20 @@
                     </a>
                 </div>
                 <label class="footer-subscribe">
-                    <span>
+                    <p class="footer__subscribe-position">Подпишитесь на рассылку</p>
+                    <span class="footer__input-position">
                         <input type="text" class="footer-subscribe__input" name="mail-client-subscribe" minlength="5"
                             pattern="[a-zA-Za-0-9]-[@]-[a-zA-Za]-[.]-[a-zA-Za]" placeholder="E-mail"
                             title="Почта должна содержать символы латиницы с использованием знака @" required>
                     </span>
                 </label>
-                <button type="submit" class="footer-subscribe__button">Подписаться
-                    <svg class="footer-subscribe__icon" width=24px height=24px>
-                        <use href="./img/sprite.svg#send"></use>
-                    </svg>
-                </button>
+                <div class="footer-subscribe__button-position">
+                    <button type="submit" class="footer-subscribe__button">Подписаться
+                        <svg class="footer-subscribe__icon" width=24px height=24px>
+                            <use href="./img/sprite.svg#send"></use>
+                        </svg>
+                    </button>
+                </div>
                 <!--<input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
                         <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#"
                                 class="modal-form-label-link">Условия договора</a></label>
