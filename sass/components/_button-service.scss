@@ -17,3 +17,23 @@
     
   }
 }
+
+@media screen and (max-width: 1199px) {
+  .button-service {
+    font-family: var(--secondary-main-font-family);
+    font-style: var(--main-font-style);
+    font-weight: var(--main-font-weight);
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    letter-spacing: 0.06em;
+    color: var(--color-text-for-dark-theme);
+    background-color: var(--main-color-hover-focus);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: 0px;
+    padding: 10px 32px 10px 32px;
+    margin: auto;
+    
+  }
+}
