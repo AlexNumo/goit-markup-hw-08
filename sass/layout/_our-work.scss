@@ -1,12 +1,18 @@
-@media screen and (max-width: 767px) {
+.our-work-position {
+  display: none;
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
   .our-work-position {
-    display: none;
+  display: none;
   }
 }
 
- .our-work-position {
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+    .our-work-position {
     padding-bottom: 22px;
   }
+
   .our-work {
     font-family: var(--secondary-main-font-family);
     font-style: var(--main-font-style);
@@ -47,3 +53,4 @@
     overflow: auto;
     transform: translateY(-105%);
   }
+}
