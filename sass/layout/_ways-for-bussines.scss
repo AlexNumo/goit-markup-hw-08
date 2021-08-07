@@ -1,6 +1,6 @@
 .ways-section-position {
   padding-top: 60px;
-  padding-bottom: 60px;    
+  padding-bottom: 60px;
 }
 
 .ways-position {
@@ -41,11 +41,12 @@
   letter-spacing: 0.03em;
   color: var(--secondary-color-for-text);
   text-transform: none;
-  margin-bottom: 30px;
 }
+
 .ways-card-position {
   width: inherit;
   margin-left: 15px;
+  margin-bottom: 30px;
 }
 
 .ways-logo {
@@ -54,65 +55,24 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .ways-section-position {
-    padding-top: 60px;
-    padding-bottom: 60px;  
-  }
-
-  .hiden-ways {
-    display: none;
-  }
-
   .ways-position {
-    display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    flex-basis: calc((100% - 30px) / 3);
+    justify-content: flex-start;
   }
 
   .ways-card-position {
     width: 354px;
-      &:not(:nth-last-child(1)) {
-        margin-right: 30px;
-      }
-  }
-
-  .ways {
-    font-family: var(--secondary-main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--main-font-weight);
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--main-color);
-    margin-bottom: 10px;
-  }
-
-  .ways-option {
-    font-family: var(--secondary-main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--secondary-font-weight);
-    font-size: 14px;
-    line-height: 1.72;
-    letter-spacing: 0.03em;
-    color: var(--secondary-color-for-text);
-    text-transform: none;
-  }
-
-  .ways-logo {
-    background-color: var(--background-color-ways-logo);
-    border-radius: 4px;
+    margin-left: 0px;
+    margin-bottom: 30px;
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+      margin-left: 0;
+    }
   }
 
   .ways-logo-position {
-    display: flex;
-    background-color: var(--background-color-ways-logo);
-    border-radius: 4px;
     width: inherit;
-    height: 120px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
   }
 }
 
@@ -132,9 +92,9 @@
 
   .ways-card-position {
     width: 270px;
-      &:not(:nth-last-child(1)) {
-        margin-right: 30px;
-      }
+    &:not(:nth-last-child(1)) {
+      margin-right: 30px;
+    }
   }
 
   .ways {

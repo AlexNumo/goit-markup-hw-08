@@ -1,6 +1,7 @@
 .our-clients {
   padding-top: 60px;
   padding-bottom: 60px;
+  margin-left: 15px;
 }
 
 .clients-name-section {
@@ -17,11 +18,11 @@
 .clients-position {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 30px;
 }
 
 .clients-logo__position {
   display: flex;
-  margin-top: 30px;
   width: 210px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -31,7 +32,21 @@
   align-items: center;
   transition-duration: 250ms;
   transition-timing-function: (0.4, 0, 0.2, 1);
-  margin-right: 30px;
+
+  &:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+
+  &:nth-child(5n - 2) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  &:nth-child(6n - 2) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
   &:hover .clients-logo,
   &:focus .clients-logo {
     fill: var(--main-color-hover-focus);
@@ -51,43 +66,34 @@
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-    .our-clients {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
-
-  .clients-name-section {
-    font-family: var(--secondary-main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--main-font-weight);
-    font-size: 22px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-  }
-
-  .clients-position {
-    display: flex;
-    flex-wrap: wrap;
+  .our-clients {
+    margin-left: 0px;
   }
 
   .clients-logo__position {
-    display: flex;
-    margin-top: 30px;
     width: 226px;
-    height: 92px;
-    border: 1px solid #afb1b8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: (0.4, 0, 0.2, 1);
-    margin-right: 30px;
-    &:hover .clients-logo,
-    &:focus .clients-logo {
-      fill: var(--main-color-hover-focus);
+
+    &:nth-child(2n + 1) {
+      margin-right: 0px;
+    }
+
+    &:nth-child(1n - 2) {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    &:nth-child(6n - 2) {
+      margin-top: 0px;
+      margin-bottom: 0px;
+    }
+
+    &:nth-child(3n + 1),
+    &:nth-child(3n + 2) {
+      margin-right: 30px;
+    }
+
+    &:nth-child(n + 4) {
+      margin-top: 30px;
     }
   }
 
