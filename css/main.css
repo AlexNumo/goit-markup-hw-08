@@ -402,7 +402,7 @@ textarea {
   width: 200px;
   height: 50px;
   margin-top: 30px;
-  margin-left: 124px;
+  text-align: center;
   cursor: pointer;
   transition-duration: 250ms;
 }
@@ -412,6 +412,11 @@ textarea {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition-timing-function: 0.4, 0, 0.2, 1;
+}
+
+.modal-form__button-position {
+  display: flex;
+  justify-content: center;
 }
 
 .modal-form__label-link {
@@ -638,46 +643,6 @@ textarea {
   }
 }
 
-.menu {
-  position: fixed;
-  z-index: 100;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: wheat;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  transition: opacity 500ms linear, visibility 500ms linear;
-}
-
-.mobile-menu {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 528px;
-  height: 581px;
-  background-color: var(--background-color-for-backdrop);
-  transform: translate(-50%, -50%);
-  animation-name: animation-backdrop;
-  animation-duration: 300ms;
-}
-
-.close-button-menu {
-  position: absolute;
-  top: 1px;
-  right: 8px;
-}
-
-.close-button-menu:hover, .close-button-menu:focus {
-  fill: var(--main-color-hover-focus);
-}
-
-.business-background {
-  display: none;
-}
-
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .menu {
     display: none;
@@ -704,7 +669,6 @@ textarea {
   color: var(--main-color);
   display: flex;
   justify-content: space-between;
-  margin-left: 15px;
 }
 
 .navigation-bar a {
@@ -719,19 +683,16 @@ textarea {
   display: none;
 }
 
-.navigation-bar__mobile-menu {
-  margin-left: 236px;
-}
-
 .navigation-bar__menu-position {
   border: none;
   background-color: inherit;
-  margin-right: 15px;
 }
 
 .position-header {
   padding-bottom: 16px;
   padding-top: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navigation-bar__menu-position:hover,
@@ -944,36 +905,6 @@ textarea {
   text-transform: uppercase;
   color: var(--color-text-for-dark-theme);
   padding-bottom: 30px;
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .business {
-    font-family: var(--secondary-main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--forthly-font-weight);
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-text-for-dark-theme);
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1200px) {
-  .business {
-    font-family: var(--secondary-main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--forthly-font-weight);
-    font-size: 44px;
-    line-height: 1.37;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-text-for-dark-theme);
-    margin-bottom: 30px;
-  }
 }
 
 .ways-section-position {
@@ -1215,6 +1146,7 @@ textarea {
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
   margin-left: 15px;
+  width: 450px;
 }
 
 .member-card:not(:nth-last-child(1)) {
@@ -1621,10 +1553,6 @@ textarea {
 }
 
 .address-mobile-position {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
   margin-top: 20px;
   margin-bottom: 60px;
 }
@@ -1637,6 +1565,7 @@ textarea {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--color-text-for-dark-theme);
+  margin-bottom: 20px;
 }
 
 .footer__living {
@@ -1692,9 +1621,8 @@ textarea {
 
 .footer__position-address-link {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer__sign-logo-position {
@@ -1800,11 +1728,6 @@ textarea {
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
-  .footer__position {
-    background-color: var(--footer-background);
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
   .footer__position-address-link-sign {
     display: flex;
     justify-content: center;
@@ -2135,6 +2058,7 @@ textarea {
   padding-bottom: 60px;
   padding-top: 60px;
   border-top: 1px solid #ececec;
+  margin-left: 15px;
 }
 
 .button__position {
@@ -2189,7 +2113,7 @@ textarea {
   transition-timing-function: 0.4, 0, 0.2, 1;
 }
 
-.content-maket-position:hover {
+.content__position-block:hover, .content__position-block:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -2208,6 +2132,7 @@ textarea {
   transition-duration: 250ms;
   transition-timing-function: 0.4, 0, 0.2, 1;
   cursor: pointer;
+  border-radius: 4px;
 }
 
 .portfolio__button-service:hover, .portfolio__button-service:focus {

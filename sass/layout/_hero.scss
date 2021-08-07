@@ -10,33 +10,3 @@
   color: var(--color-text-for-dark-theme);
   padding-bottom: 30px;
 }
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .business {
-    font-family: var(--secondary-main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--forthly-font-weight);
-    font-size: 26px;
-    line-height: 1.62;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-text-for-dark-theme);
-    margin-bottom: 30px;
-  }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1200px){
-  .business {
-    font-family: var(--secondary-main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--forthly-font-weight);
-    font-size: 44px;
-    line-height: 1.37;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: var(--color-text-for-dark-theme);
-    margin-bottom: 30px;
-  }
-}

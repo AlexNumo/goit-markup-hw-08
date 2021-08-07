@@ -12,7 +12,6 @@
   color: var(--main-color);
   display: flex;
   justify-content: space-between;
-  margin-left: 15px;
 
   & a {
     color: var(--color-for-links-of-navigation);
@@ -29,25 +28,24 @@
   }
 
   &__mobile-menu {
-    margin-left: 236px;
   }
 
   &__menu-position {
     border: none;
     background-color: inherit;
-    margin-right: 15px;
   }
 }
 .position-header {
   padding-bottom: 16px;
   padding-top: 16px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navigation-bar__menu-position:hover,
 .navigation-bar__menu-position:focus {
   fill: var(--main-color-hover-focus);
 }
-
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .navigation-bar {

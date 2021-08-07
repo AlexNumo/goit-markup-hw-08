@@ -4,7 +4,7 @@
   padding-bottom: 60px;
 }
 
-.member-mobile-photo{
+.member-mobile-photo {
   width: 450px;
   height: 460px;
 }
@@ -16,9 +16,10 @@
   border-radius: 0px 0px 4px 4px;
   margin-bottom: 30px;
   margin-left: 15px;
+  width: 450px;
   &:not(:nth-last-child(1)) {
-      margin-right: 50px;
-    }
+    margin-right: 50px;
+  }
 }
 
 .our-team-members {
@@ -79,17 +80,17 @@
   transition-duration: 250ms;
   transition-timing-function: (0.4, 0, 0.2, 1);
 
-    &:not(:nth-last-child(1)) {
-      margin-right: 10px;
-    }
-
-    &:hover,
-    &:focus {
-      background-color: var(--main-color-hover-focus);
+  &:not(:nth-last-child(1)) {
+    margin-right: 10px;
   }
-    &:hover .member-logo,
-    &:focus .member-logo {
-      fill: var(--background-color-member-card);
+
+  &:hover,
+  &:focus {
+    background-color: var(--main-color-hover-focus);
+  }
+  &:hover .member-logo,
+  &:focus .member-logo {
+    fill: var(--background-color-member-card);
   }
 }
 
@@ -106,7 +107,7 @@
     padding-bottom: 60px;
   }
 
-  .member-mobile-photo{
+  .member-mobile-photo {
     width: 354px;
     height: 374px;
   }
@@ -118,7 +119,6 @@
     border-radius: 0px 0px 4px 4px;
     margin-bottom: 30px;
     margin-left: 15px;
-
   }
 
   .our-team-members {
@@ -179,17 +179,17 @@
     transition-duration: 250ms;
     transition-timing-function: (0.4, 0, 0.2, 1);
 
-      &:not(:nth-last-child(1)) {
-        margin-right: 10px;
-      }
-
-      &:hover,
-      &:focus {
-        background-color: var(--main-color-hover-focus);
+    &:not(:nth-last-child(1)) {
+      margin-right: 10px;
     }
-      &:hover .member-logo,
-      &:focus .member-logo {
-        fill: var(--background-color-member-card);
+
+    &:hover,
+    &:focus {
+      background-color: var(--main-color-hover-focus);
+    }
+    &:hover .member-logo,
+    &:focus .member-logo {
+      fill: var(--background-color-member-card);
     }
   }
 
@@ -201,7 +201,7 @@
 }
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
-    .our-team-position {
+  .our-team-position {
     background-color: var(--background-color-our-team);
     padding-top: 94px;
     padding-bottom: 94px;
@@ -270,20 +270,18 @@
     transition-duration: 250ms;
     transition-timing-function: (0.4, 0, 0.2, 1);
 
-      &:not(:nth-last-child(1)) {
-        margin-right: 10px;
-      }
+    &:not(:nth-last-child(1)) {
+      margin-right: 10px;
+    }
 
-      &:hover,
-      &:focus {
-        background-color: var(--main-color-hover-focus);
-  }
-      &:hover .member-logo,
-      &:focus .member-logo {
-        fill: var(--background-color-member-card);
-  }
-
-
+    &:hover,
+    &:focus {
+      background-color: var(--main-color-hover-focus);
+    }
+    &:hover .member-logo,
+    &:focus .member-logo {
+      fill: var(--background-color-member-card);
+    }
   }
 
   .member-logo {
