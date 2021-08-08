@@ -193,8 +193,8 @@ textarea {
   .business-background {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/img_backgraund.png");
     background-size: cover;
-    padding-top: 272px;
-    padding-bottom: 206px;
+    padding-top: 200px;
+    padding-bottom: 200px;
     padding-left: 100px;
   }
 }
@@ -777,20 +777,11 @@ textarea {
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .navigation-bar {
-    font-family: var(--main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--main-font-weight);
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-    display: flex;
     margin-top: 24px;
-  }
-  .navigation-bar a {
-    color: var(--color-for-links-of-navigation);
+    margin-left: 215px;
   }
   .navigation-bar__contacts, .navigation-bar__portfolio, .navigation-bar__studio {
+    display: flex;
     color: var(--main-color);
     transition-duration: 250ms;
     transition-timing-function: 0.4, 0, 0.2, 1;
@@ -834,7 +825,7 @@ textarea {
   }
   .position-header {
     display: flex;
-    height: 80px;
+    padding: 0px 0px 0px 0px;
   }
   .navigation-link {
     font-family: var(--secondary-main-font-family);
@@ -855,7 +846,6 @@ textarea {
     display: flex;
     margin-top: 28px;
     margin-left: auto;
-    height: 20px;
   }
   .mail-phone__logo {
     margin-right: 10px;
@@ -864,9 +854,6 @@ textarea {
   .position-link__mail {
     display: flex;
     margin-right: 30px;
-  }
-  .logo__three-letters {
-    color: var(--main-color-hover-focus);
   }
 }
 

@@ -145,23 +145,13 @@
 
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .navigation-bar {
-    font-family: var(--main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--main-font-weight);
-    font-size: 26px;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
-    display: flex;
     margin-top: 24px;
-
-    & a {
-      color: var(--color-for-links-of-navigation);
-    }
+    margin-left: 215px;
 
     &__contacts,
     &__portfolio,
     &__studio {
+      display: flex;
       color: var(--main-color);
       transition-duration: 250ms;
       transition-timing-function: (0.4, 0, 0.2, 1);
@@ -172,6 +162,7 @@
         color: var(--main-color-hover-focus);
       }
     }
+
     &__mail-phone {
       font-family: var(--secondary-main-font-family);
       font-style: var(--main-font-style);
@@ -207,7 +198,7 @@
 
   .position-header {
     display: flex;
-    height: 80px;
+    padding: 0px 0px 0px 0px;
   }
 
   .navigation-link {
@@ -232,8 +223,8 @@
       display: flex;
       margin-top: 28px;
       margin-left: auto;
-      height: 20px;
     }
+
     &__logo {
       margin-right: 10px;
       fill: var(--secondary-color-for-text);
@@ -243,9 +234,5 @@
   .position-link__mail {
     display: flex;
     margin-right: 30px;
-  }
-
-  .logo__three-letters {
-    color: var(--main-color-hover-focus);
   }
 }
