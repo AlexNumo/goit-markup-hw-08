@@ -36,8 +36,6 @@
 .content-maket {
   background-color: var(--background-color-member-card);
   box-sizing: border-box;
-  display: flex;
-  margin-left: -30px;
 }
 
 .content__border {
@@ -50,7 +48,6 @@
 
 .content__position-block {
   flex-basis: calc((100% - 90px) / 3);
-  margin-left: 30px;
   margin-bottom: 30px;
   position: relative;
   transition-duration: 250ms;
@@ -144,8 +141,49 @@
   padding-top: 4px;
 }
 
-//доделать
-//@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .button__position {
+    justify-content: center;
+    flex-wrap: nowrap;
+  }
+
+  .button__position-bort:not(:last-child) {
+    padding-right: 0px;
+    margin-right: 8px;
+  }
+
+  .button__position-bort:nth-child(5) {
+    padding-top: 0px;
+  }
+
+  .button__position-bort:nth-child(4) {
+    padding-top: 0px;
+  }
+
+  .content-position {
+    margin-top: 30px;
+    flex-wrap: wrap;
+  }
+
+  .content__position-block {
+    width: 354px;
+    &:nth-child(2n + 1) {
+      margin-right: 30px;
+    }
+  }
+
+  .hiden-overlay {
+    width: 354px;
+  }
+  .content-picture-size {
+    width: 354px;
+  }
+
+  .content__border {
+    width: 354px;
+  }
+}
+
 @media screen and (min-width: 769px) and (max-width: 1200px) {
   .portfolio__background {
     padding-bottom: 94px;
