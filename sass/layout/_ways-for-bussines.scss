@@ -87,37 +87,21 @@
   }
 
   .ways-position {
-    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
   }
 
   .ways-card-position {
     width: 270px;
+    margin-left: 0px;
+    margin-bottom: 0px;
     &:not(:nth-last-child(1)) {
       margin-right: 30px;
     }
   }
 
   .ways {
-    font-family: var(--secondary-main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--main-font-weight);
-    font-size: 14px;
-    line-height: 1.14;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--main-color);
-    margin-bottom: 10px;
-  }
-
-  .ways-option {
-    font-family: var(--secondary-main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--secondary-font-weight);
-    font-size: 14px;
-    line-height: 24px;
-    letter-spacing: 0.03em;
-    color: var(--secondary-color-for-text);
-    text-transform: none;
+    justify-content: flex-start;
   }
 
   .ways-logo {
@@ -126,13 +110,6 @@
   }
 
   .ways-logo-position {
-    display: flex;
-    background-color: var(--background-color-ways-logo);
-    border-radius: 4px;
     width: 270px;
-    height: 120px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 30px;
   }
 }

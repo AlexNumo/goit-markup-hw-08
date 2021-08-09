@@ -114,39 +114,38 @@
   .our-clients {
     padding-top: 94px;
     padding-bottom: 94px;
+    margin-left: 0px;
   }
 
   .clients-name-section {
-    font-family: var(--secondary-main-font-family);
-    font-style: var(--main-font-style);
-    font-weight: var(--main-font-weight);
     font-size: 36px;
-    line-height: 1.17;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-color);
   }
 
   .clients-position {
-    display: flex;
+    flex-wrap: nowrap;
+    margin-top: 50px;
   }
 
   .clients-logo__position {
-    display: flex;
-    margin-top: 50px;
     width: 170px;
-    height: 92px;
-    border: 1px solid #afb1b8;
-    box-sizing: border-box;
-    border-radius: 4px;
-    justify-content: center;
-    align-items: center;
-    transition-duration: 250ms;
-    transition-timing-function: (0.4, 0, 0.2, 1);
 
     &:not(:nth-last-child(1)) {
       margin-right: 30px;
     }
+      &:nth-child(2n + 1) {
+    margin-right: 30px;
+  }
+
+  &:nth-child(5n - 2) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+  &:nth-child(6n - 2) {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
     &:hover .clients-logo,
     &:focus .clients-logo {
       fill: var(--main-color-hover-focus);

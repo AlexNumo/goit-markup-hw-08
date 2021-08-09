@@ -10,3 +10,11 @@
   color: var(--color-text-for-dark-theme);
   padding-bottom: 30px;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+  .business {
+    font-size: 44px;
+    line-height: 1.37;
+  }
+}
+

@@ -288,6 +288,7 @@
                             </ul>
                         </div>
                     </address>
+                    </div>
                         <div class="footer__position-subscribe">
                             <h2 class="footer__link-sign">присоединяйтесь</h2>
                             <div class="footer__sign-logo-position">
@@ -313,21 +314,22 @@
                                 </a>
                             </div>
                         </div>
-                    </div>
-                    <label class="footer-subscribe">
-                        <p class="footer__subscribe-position">Подпишитесь на рассылку</p>
-                        <span class="footer__input-position">
-                            <input type="text" class="footer-subscribe__input" name="mail-client-subscribe" minlength="5"
-                                pattern="[a-zA-Za-0-9]-[@]-[a-zA-Za]-[.]-[a-zA-Za]" placeholder="E-mail"
-                                title="Почта должна содержать символы латиницы с использованием знака @" required>
-                        </span>
-                    </label>
-                    <div class="footer-subscribe__button-position">
-                        <button type="submit" class="footer-subscribe__button">Подписаться
-                            <svg class="footer-subscribe__icon" width=24px height=24px>
-                                <use href="./img/sprite.svg#send"></use>
-                            </svg>
-                        </button>
+                    <div class="footer__subscribe-position-btn">
+                        <label class="footer-subscribe">
+                            <p class="footer__subscribe-position">Подпишитесь на рассылку</p>
+                            <span class="footer__input-position">
+                                <input type="text" class="footer-subscribe__input" name="mail-client-subscribe" minlength="5"
+                                    pattern="[a-zA-Za-0-9]-[@]-[a-zA-Za]-[.]-[a-zA-Za]" placeholder="E-mail"
+                                    title="Почта должна содержать символы латиницы с использованием знака @" required>
+                            </span>
+                        </label>
+                        <div class="footer-subscribe__button-position">
+                            <button type="submit" class="footer-subscribe__button">Подписаться
+                                <svg class="footer-subscribe__icon" width=24px height=24px>
+                                    <use href="./img/sprite.svg#send"></use>
+                                </svg>
+                            </button>
+                        </div>
                     </div>
                     <!--<input type="checkbox" class="modal-form-checkbox visually-hidden" id="accept-policy">
                     <label for="accept-policy" class="modal-form-checkbox-label">Соглашаюсь с рассылкой и принимаю&nbsp;<a href="#"
@@ -395,16 +397,38 @@
         </div>
     </div>
 <!--==========MOBILE MENU================================-->
-    <div class="menu is-open" data-menu>
-        <div class="mobile-menu">
-            <button class="close-button-menu" type="button" data-menu-close>
-                <svg width=11px height=11px>
-                    <use href="./img/sprite.svg#close"></use>
-                </svg>
-            </button>
-        </div>
-
-    </div>
+    <div class="menu container" data-menu>
+                <button class="close-button-menu" type="button" data-menu-close>
+                    <svg width=18px height=18px>
+                        <use href="./img/sprite.svg#close"></use>
+                    </svg>
+                </button>
+                <ul class="mobile-menu__navigation">
+                    <li class="mobile-menu__link"><a class="mobile-menu__link-position" href="index.html">Студия</a>
+                    </li>
+                    <li class="mobile-menu__link"><a class="mobile-menu__link-position" href="portfolio.html">Портфолио</a></li>
+                    <li class="mobile-menu__link"><a class="mobile-menu__link-position" href="">Контакты</a></li>
+                </ul>
+                <div class="">
+                    <ul class="mobile-menu__mail-phone-position">
+                        <li class="mobile-menu__phone-position">
+                            <a class="mobile-menu__phone" href="tel:+380961111111">+38 096 111 11 11</a>
+                        </li>
+                        <li class="mobile-menu__mail-position">
+                            <a class="mobile-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="social-links-position">
+                        <li class="social-links-after"><a class="social-links" href="#">Instagram</a></li>
+                        <li class="social-links-after"><a class="social-links" href="#">Twitter</a></li>
+                        <li class="social-links-after"><a class="social-links" href="#">Facebook</a></li>
+                        <li class="social-links-after"><a class="social-links" href="#">Linkedin</a></li>
+                    </ul>
+                </div>
+            </div>
+       
 
 
     <script src="./js/modal.js"></script>
