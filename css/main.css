@@ -78,7 +78,7 @@ textarea {
   .container {
     width: 768px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 0;
   }
 }
 
@@ -187,8 +187,6 @@ textarea {
   .business-background {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background_img_laptop.png");
     background-size: cover;
-    width: max-content;
-    height: max-content;
     padding-bottom: 118px;
     padding-top: 118px;
   }
@@ -1078,6 +1076,7 @@ textarea {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: flex-start;
+    padding-left: 15px;
   }
   .ways-card-position {
     width: 354px;
@@ -1299,6 +1298,7 @@ textarea {
     flex-direction: row;
     justify-content: flex-start;
     width: inherit;
+    padding-left: 15px;
   }
   .member-logo-position {
     margin-bottom: 24px;
@@ -1450,6 +1450,9 @@ textarea {
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .our-clients {
     margin-left: 0px;
+  }
+  .clients-position {
+    padding-left: 15px;
   }
   .clients-logo__position {
     width: 226px;
