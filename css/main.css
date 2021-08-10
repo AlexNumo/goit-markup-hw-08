@@ -138,7 +138,7 @@ textarea {
   margin: auto;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .button-service {
     font-family: var(--secondary-main-font-family);
     font-style: var(--main-font-style);
@@ -157,7 +157,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .button-service {
     font-family: var(--secondary-main-font-family);
     font-style: var(--main-font-style);
@@ -437,7 +437,7 @@ textarea {
   margin-top: 20px;
 }
 
-@media screen and (min-width: 1199px) {
+@media screen and (min-width: 1200px) {
   @keyframes animation-backdrop {
     0% {
       transform: scale(0.25);
@@ -1013,7 +1013,7 @@ textarea {
   padding-bottom: 30px;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .business {
     font-size: 44px;
     line-height: 1.37;

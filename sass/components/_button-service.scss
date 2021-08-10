@@ -15,7 +15,7 @@
   margin: auto;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px){
+@media screen and (min-width: 768px) and (max-width: 1199px){
   .button-service {
     font-family: var(--secondary-main-font-family);
     font-style: var(--main-font-style);
@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .button-service {
     font-family: var(--secondary-main-font-family);
     font-style: var(--main-font-style);
