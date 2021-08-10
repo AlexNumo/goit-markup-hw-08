@@ -4,7 +4,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../img/mobile_background.png");
+      url("../img/background_mobile.jpg");
     background-size: cover;
     height: max-content;
     padding-bottom: 118px;
@@ -18,7 +18,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../img/background_img_laptop.png");
+      url("../img/background_laptop.jpg");
     background-size: cover;
     padding-bottom: 118px;
     padding-top: 118px;
@@ -31,9 +31,9 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../img/img_backgraund.png");
+      url("../img/background_desktop.jpg");
     background-size: cover;
-    padding-bottom: 118px;
-    padding-top: 118px;
+    padding-bottom: 200px;
+    padding-top: 200px;
   }
 }

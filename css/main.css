@@ -178,7 +178,7 @@ textarea {
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .business-background {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobile_background.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background_mobile.jpg");
     background-size: cover;
     height: max-content;
     padding-bottom: 118px;
@@ -188,7 +188,7 @@ textarea {
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .business-background {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background_img_laptop.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background_laptop.jpg");
     background-size: cover;
     padding-bottom: 118px;
     padding-top: 118px;
@@ -197,10 +197,10 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .business-background {
-    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/img_backgraund.png");
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/background_desktop.jpg");
     background-size: cover;
-    padding-bottom: 118px;
-    padding-top: 118px;
+    padding-bottom: 200px;
+    padding-top: 200px;
   }
 }
 
