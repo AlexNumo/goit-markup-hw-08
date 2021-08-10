@@ -146,6 +146,7 @@
   justify-content: center;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  padding-left: 15px;
 }
 
 .footer-subscribe__button {
@@ -184,7 +185,7 @@
   justify-content: center;
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__position-address-link-sign {
     display: flex;
     margin-bottom: 60px;
@@ -208,7 +209,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .footer__position {
     padding-bottom: 60px;
     padding-top: 60px;
@@ -248,8 +249,8 @@
     color: rgba(255, 255, 255, 0.6);
   }
 
-    .footer__subscribe-position-btn{
-      display: flex;
+  .footer__subscribe-position-btn{
+    display: flex;
   }
 
   .footer-address__mail-position {

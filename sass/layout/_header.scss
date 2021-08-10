@@ -48,7 +48,7 @@
 }
 
 //==========================481-768======================================
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .position-header {
     display: flex;
     padding: 21px 15px 0px 15px;
@@ -143,11 +143,21 @@
   }
 }
 
-@media screen and (min-width: 769px) {
-  .navigation-bar {
-    margin-top: 24px;
-    margin-left: 215px;
+@media screen and (min-width: 1200px) {
+  .header {
+    padding-top: 24px;
+  }
 
+  .position-header{
+    display: flex;
+    padding: 0px 0px 0px 0px;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+
+  .navigation-bar {
+      justify-content: space-between;
+      align-items: baseline;
     &__contacts,
     &__portfolio,
     &__studio {
@@ -196,11 +206,6 @@
     }
   }
 
-  .position-header {
-    display: flex;
-    padding: 0px 0px 0px 0px;
-  }
-
   .navigation-link {
     font-family: var(--secondary-main-font-family);
     font-style: var(--main-font-style);
@@ -210,7 +215,6 @@
     letter-spacing: 0.02em;
     color: var(--main-color);
     display: flex;
-    margin-top: 8px;
     margin-left: 93px;
 
     &__position:not(:last-child) {
@@ -221,8 +225,6 @@
   .mail-phone {
     &__position {
       display: flex;
-      margin-top: 28px;
-      margin-left: auto;
     }
 
     &__logo {

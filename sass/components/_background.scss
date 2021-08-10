@@ -1,4 +1,4 @@
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 767px) {
   .business-background {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -12,7 +12,7 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1199px) {
   .business-background {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -25,7 +25,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .business-background {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -35,6 +35,5 @@
     background-size: cover;
     padding-bottom: 118px;
     padding-top: 118px;
-    padding-left: -15px;
   }
 }

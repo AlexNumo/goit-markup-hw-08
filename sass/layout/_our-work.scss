@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .our-work-position {
     display:block;
     padding-bottom: 22px;
@@ -23,9 +23,14 @@
 
   .our-work-image {
     display: flex;
-    justify-content: space-around;
     margin-top: 50px;
+    justify-content: center;
   }
+
+  .our-work-image-position:not(:last-child){
+      margin-right: 30px;
+    }
+  
 
   .our-work-description {
     font-family: var(--secondary-main-font-family);
