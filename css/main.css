@@ -2082,6 +2082,7 @@ textarea {
   .content-position {
     margin-top: 50px;
     flex-wrap: wrap;
+    justify-content: center;
   }
   .content-maket {
     background-color: var(--background-color-member-card);
@@ -2096,7 +2097,7 @@ textarea {
     padding: 20px 0px 20px 24px;
   }
   .content__position-block {
-    flex-basis: calc((100% - 90px) / 3);
+    flex-basis: calc((100% - 90px) / 9);
     margin-bottom: 30px;
     position: relative;
     transition-duration: 250ms;
