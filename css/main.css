@@ -271,11 +271,8 @@ textarea {
 }
 
 .position-form {
-  padding-left: 40px;
-  padding-top: 40px;
-  padding-right: 40px;
+  padding: 40px 25px 40px 25px;
   margin: 0;
-  padding-bottom: 40px;
 }
 
 .data-form {
@@ -500,11 +497,8 @@ textarea {
     pointer-events: none;
   }
   .position-form {
-    padding-left: 40px;
-    padding-top: 40px;
-    padding-right: 40px;
+    padding: 40px 25px 40px 25px;
     margin: 0;
-    padding-bottom: 40px;
   }
   .data-form {
     font-family: var(--secondary-main-font-family);
@@ -1066,17 +1060,18 @@ textarea {
   text-transform: none;
 }
 
-.ways-card-position {
-  width: inherit;
-}
-
-.ways-card-position:not(:last-child) {
-  margin-bottom: 30px;
-}
-
 .ways-logo {
   background-color: var(--background-color-ways-logo);
   border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
+  .ways-card-position {
+    width: inherit;
+  }
+  .ways-card-position:not(:last-child) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1094,6 +1089,9 @@ textarea {
   }
   .ways-card-position:first-child {
     margin-bottom: 30px;
+  }
+  .ways {
+    justify-content: flex-start;
   }
   .ways-logo-position {
     width: inherit;
@@ -1343,6 +1341,9 @@ textarea {
   .member-card:nth-child(1), .member-card:nth-child(2) {
     margin-bottom: 0px;
   }
+  .our-team {
+    margin-bottom: 50px;
+  }
   .our-team-members {
     display: flex;
     justify-content: center;
@@ -1405,7 +1406,6 @@ textarea {
 .our-clients {
   padding-top: 60px;
   padding-bottom: 60px;
-  margin-left: 15px;
 }
 
 .clients-name-section {
@@ -1660,8 +1660,8 @@ textarea {
 }
 
 .footer-subscribe__input {
-  background-color: var(--color-for-radius-subscribe);
-  width: 450px;
+  background-color: inherit;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -1719,7 +1719,12 @@ textarea {
 
 .footer__position-address-link-sign {
   margin-top: 20px;
-  margin-bottom: 60px;
+}
+
+@media screen and (max-width: 768px) {
+  .footer__position-address-link-sign {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__position-subscribe {
@@ -1889,7 +1894,6 @@ textarea {
   padding-bottom: 60px;
   padding-top: 60px;
   border-top: 1px solid #ececec;
-  padding-left: 15px;
 }
 
 .button__position {

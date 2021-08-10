@@ -127,8 +127,8 @@
 }
 
 .footer-subscribe__input {
-  background-color: var(--color-for-radius-subscribe);
-  width: 450px;
+  background-color: inherit;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
@@ -185,12 +185,17 @@
 
 .footer__position-address-link-sign {
   margin-top: 20px;
-  margin-bottom: 60px;
 }
 
-.footer__position-subscribe{
+@media screen and (max-width: 768px) {
+  .footer__position-address-link-sign {
   margin-bottom: 60px;
+  }
 }
+    
+  .footer__position-subscribe{
+    margin-bottom: 60px;
+  }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer__position-address-link-sign {

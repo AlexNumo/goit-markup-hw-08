@@ -19,6 +19,7 @@
   align-items: center;
   margin-bottom: 30px;
 }
+
 .ways {
   font-family: var(--secondary-main-font-family);
   font-style: var(--main-font-style);
@@ -32,6 +33,7 @@
   display: flex;
   justify-content: center;
 }
+
 .ways-option {
   font-family: var(--secondary-main-font-family);
   font-style: var(--main-font-style);
@@ -43,16 +45,18 @@
   text-transform: none;
 }
 
+.ways-logo {
+  background-color: var(--background-color-ways-logo);
+  border-radius: 4px;
+}
+
+@media screen and (max-width: 767px) {
 .ways-card-position {
   width: inherit;
     &:not(:last-child){
       margin-bottom: 30px;
+    }
   }
-}
-
-.ways-logo {
-  background-color: var(--background-color-ways-logo);
-  border-radius: 4px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -71,6 +75,10 @@
     &:first-child{
       margin-bottom: 30px;
     }
+  }
+
+  .ways{
+    justify-content: flex-start;
   }
 
   .ways-logo-position {
