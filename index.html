@@ -15,8 +15,7 @@
 <body>
 <!--========HEADER========================-->
     <header class="header">
-        <div class="container">
-            <div class="position-header">
+        <div class="position-header container">
                 <nav class="navigation-bar">
                     <a href="index.html"><span class="logo__three-letters">Web</span>Studio</a>
                     <ul class="navigation-link">
@@ -50,7 +49,6 @@
                         </ul>
                     </div>
                 </div>
-        </div>
     </header>
 <!--========HERO========================-->  
         <section class="business-background">
@@ -143,7 +141,7 @@
                         srcset="./img/team_member_1_desktop.jpg 1x, ./img/team_member_1_desktop@2x.jpg 2x">
                         <source media="(min-width:768px)" 
                         srcset="./img/team_member_1_laptop.jpg 1x, ./img/team_member_1_laptop@2x.jpg 2x">
-                        <source media="(min-width:480px)" 
+                        <source media="(min-width:320px)" 
                         srcset="./img/team_member_1_mobile.jpg 1x, ./img/team_member_1_mobile@2x.jpg 2x">
                         <img class="member-mobile-photo" src="" alt="Игорь Демьяненко">
                     </picture>
@@ -178,7 +176,7 @@
                             srcset="./img/team_member_2_desktop.jpg 1x, ./img/team_member_2_desktop@2x.jpg 2x">
                         <source media="(min-width:768px)"
                             srcset="./img/team_member_2_laptop.jpg 1x, ./img/team_member_2_laptop@2x.jpg 2x">
-                        <source media="(min-width:480px)"
+                        <source media="(min-width:320px)"
                             srcset="./img/team_member_2_mobile.jpg 1x, ./img/team_member_2_mobile@2x.jpg 2x">
                         <img class="member-mobile-photo" src="" alt="Ольга Репина">
                     </picture>                    
@@ -213,7 +211,7 @@
                             srcset="./img/team_member_3_desktop.jpg 1x, ./img/team_member_3_desktop@2x.jpg 2x">
                         <source media="(min-width:768px)" 
                             srcset="./img/team_member_3_laptop.jpg 1x, ./img/team_member_3_laptop@2x.jpg 2x">
-                        <source media="(min-width:480px)" 
+                        <source media="(min-width:320px)" 
                             srcset="./img/team_member_3_mobile.jpg 1x, ./img/team_member_3_mobile@2x.jpg 2x">
                         <img class="member-mobile-photo" src="" alt="Николай Тарасов">
                     </picture>
@@ -248,7 +246,7 @@
                             srcset="./img/team_member_4_desktop.jpg 1x, ./img/team_member_4_desktop@2x.jpg 2x">
                         <source media="(min-width:768px)"
                             srcset="./img/team_member_4_laptop.jpg 1x, ./img/team_member_4_laptop@2x.jpg 2x">
-                        <source media="(min-width:480px)"
+                        <source media="(min-width:320px)"
                             srcset="./img/team_member_4_mobile.jpg 1x, ./img/team_member_4_mobile@2x.jpg 2x">
                         <img class="member-mobile-photo" src="" alt="Михаил Ермаков">
                     </picture>                    
@@ -443,20 +441,23 @@
         </div>
     </div>
 <!--==========MOBILE MENU================================-->
-    <div class="menu" data-menu>
-        <div class="container">
-            <div class="menu-position">
+    <div class="menu container" data-menu>
+    
+            
                 <button class="close-button-menu" type="button" data-menu-close>
                     <svg width=18px height=18px>
                         <use href="./img/sprite.svg#close"></use>
                     </svg>
                 </button>
-                <ul class="mobile-menu__navigation">
-                    <li class="mobile-menu__link"><a class="mobile-menu__link-position" href="index.html">Студия</a>
-                    </li>
-                    <li class="mobile-menu__link"><a class="mobile-menu__link-position" href="portfolio.html">Портфолио</a></li>
-                    <li class="mobile-menu__link"><a class="mobile-menu__link-position" href="">Контакты</a></li>
-                </ul>
+                <div class="menu-position">
+                <nav>
+                    <ul class="mobile-menu__navigation">
+                        <li class="mobile-menu__link"><a class="mobile-menu__link-position" href="index.html">Студия</a>
+                        </li>
+                        <li class="mobile-menu__link"><a class="mobile-menu__link-position" href="portfolio.html">Портфолио</a></li>
+                        <li class="mobile-menu__link"><a class="mobile-menu__link-position" href="">Контакты</a></li>
+                    </ul>
+                </nav>
                 <div class="">
                     <ul class="mobile-menu__mail-phone-position">
                         <li class="mobile-menu__phone-position">
@@ -466,18 +467,16 @@
                             <a class="mobile-menu__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
                         </li>
                     </ul>
-                </div>
-                <div>
-                    <ul class="social-links-position">
-                        <li class="social-links-after"><a class="social-links" href="#">Instagram</a></li>
-                        <li class="social-links-after"><a class="social-links" href="#">Twitter</a></li>
-                        <li class="social-links-after"><a class="social-links" href="#">Facebook</a></li>
-                        <li class="social-links-after"><a class="social-links" href="#">Linkedin</a></li>
-                    </ul>
+                        <ul class="social-links-position">
+                            <li class="social-links-after"><a class="social-links" href="#">Instagram</a></li>
+                            <li class="social-links-after"><a class="social-links" href="#">Twitter</a></li>
+                            <li class="social-links-after"><a class="social-links" href="#">Facebook</a></li>
+                            <li class="social-links-after"><a class="social-links" href="#">Linkedin</a></li>
+                        </ul>
                 </div>
             </div>
         </div>
-    </div>
+
 
 
     <script src="./js/modal.js"></script>

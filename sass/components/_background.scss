@@ -1,16 +1,14 @@
-@media screen and (min-width: 320px) and (max-width: 767px) {
   .business-background {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../img/background_mobile.jpg");
+      url("../img/background_mobile@2x.jpg");
     background-size: cover;
     height: max-content;
     padding-bottom: 118px;
     padding-top: 118px;
   }
-}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .business-background {
@@ -18,7 +16,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../img/background_laptop.jpg");
+      url("../img/background_laptop@2x.jpg");
     background-size: cover;
     padding-bottom: 118px;
     padding-top: 118px;
@@ -31,7 +29,7 @@
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url("../img/background_desktop.jpg");
+      url("../img/background_desktop@2x.jpg");
     background-size: cover;
     padding-bottom: 200px;
     padding-top: 200px;

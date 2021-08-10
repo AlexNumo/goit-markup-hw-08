@@ -5,8 +5,7 @@
 }
 
 .address-mobile-position {
-  margin-top: 20px;
-  margin-bottom: 60px;
+
 }
 
 .footer-link {
@@ -82,7 +81,6 @@
 
 .footer__sign-logo-position {
   display: flex;
-  margin-bottom: 60px;
   margin-top: 20px;
   justify-content: center;
 }
@@ -183,6 +181,15 @@
 .footer__input-position {
   display: flex;
   justify-content: center;
+}
+
+.footer__position-address-link-sign {
+  margin-top: 20px;
+  margin-bottom: 60px;
+}
+
+.footer__position-subscribe{
+  margin-bottom: 60px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {

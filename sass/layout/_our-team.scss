@@ -4,21 +4,19 @@
   padding-bottom: 60px;
 }
 
-.member-mobile-photo {
-  width: 450px;
-  height: 460px;
-}
-
 .member-card {
   background-color: var(--background-color-member-card);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  margin-bottom: 30px;
-  margin-left: 15px;
   width: 450px;
-  &:not(:nth-last-child(1)) {
-    margin-right: 50px;
+  &:not(:last-child){
+    margin-bottom: 30px;
+  }
+
+  &:nth-child(1),
+  &:nth-child(2){
+    margin-bottom: 30px;
   }
 }
 
@@ -102,11 +100,6 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-  .member-mobile-photo {
-    width: 354px;
-    height: 374px;
-  }
-
   .our-team-members {
     display: flex;
     flex-wrap: wrap;
@@ -118,12 +111,25 @@
   .member-card {
     width: 354px;
     margin-left: 0px;
+    
+    &:first-child{
+      margin-bottom: 30px;
+    }
+    &:not(:last-child){
+      margin-bottom: 0px;
+    }
+
     &:not(:nth-last-child(1)) {
       margin-right: 0px;
     }
     &:nth-child(2n + 1) {
       margin-right: 30px;
     }
+    &:nth-child(1),
+    &:nth-child(2){
+      margin-bottom: 30px;
+    }
+      
   }
 
   .member-logo-position {
@@ -139,16 +145,27 @@
 
   .member-card {
     width: 270px;
-    margin-bottom: 0px;
-    margin-left: 0px;
     &:not(:nth-last-child(1)) {
       margin-right: 30px;
     }
-  }
+      &:first-child{
+      margin-bottom: 0px;
+    }
+    &:not(:last-child){
+      margin-bottom: 0px;
+    }
+    &:nth-child(1),
+    &:nth-child(2){
+      margin-bottom: 0px;
+    }
+        &:not(:last-child){
+      margin-bottom: 0px;
+    }
 
-  .member-mobile-photo {
-    width: inherit;
-    height: inherit;
+    &:nth-child(1),
+    &:nth-child(2){
+      margin-bottom: 0px;
+    }
   }
 
   .our-team-members {
