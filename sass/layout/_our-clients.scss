@@ -110,7 +110,7 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .our-clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -122,6 +122,7 @@
   }
 
   .clients-position {
+    justify-content: space-around;
     flex-wrap: nowrap;
     margin-top: 50px;
   }
@@ -130,10 +131,10 @@
     width: 170px;
 
     &:not(:nth-last-child(1)) {
-      margin-right: 30px;
+      margin-right: 0px;
     }
       &:nth-child(2n + 1) {
-    margin-right: 30px;
+    margin-right: 0px;
   }
 
   &:nth-child(5n - 2) {

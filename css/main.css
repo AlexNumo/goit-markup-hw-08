@@ -66,10 +66,12 @@ textarea {
   resize: none;
 }
 
-.container {
-  width: 480px;
-  margin: 0 auto;
-  padding: 0 auto;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .container {
+    width: 480px;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -80,16 +82,18 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .container {
     width: 1200px;
     margin: 0 auto;
-    padding: 0 15px;
+    padding: 0 0;
   }
 }
 
-.active-page::after {
-  display: none;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .active-page::after {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -103,7 +107,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .active-page::after {
     display: flex;
     content: "";
@@ -150,7 +154,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .button-service {
     font-family: var(--secondary-main-font-family);
     font-style: var(--main-font-style);
@@ -169,12 +173,14 @@ textarea {
   }
 }
 
-.business-background {
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobile_background.png");
-  background-size: cover;
-  height: max-content;
-  padding-bottom: 118px;
-  padding-top: 118px;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .business-background {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/mobile_background.png");
+    background-size: cover;
+    height: max-content;
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -188,10 +194,13 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .business-background {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../img/img_backgraund.png");
     background-size: cover;
+    padding-bottom: 118px;
+    padding-top: 118px;
+    padding-left: -15px;
   }
 }
 
@@ -428,7 +437,7 @@ textarea {
   margin-top: 20px;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   @keyframes animation-backdrop {
     0% {
       transform: scale(0.25);
@@ -772,7 +781,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .navigation-bar__mobile-menu {
     display: none;
   }
@@ -904,7 +913,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .navigation-bar {
     margin-top: 24px;
     margin-left: 215px;
@@ -999,7 +1008,7 @@ textarea {
   padding-bottom: 30px;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .business {
     font-size: 44px;
     line-height: 1.37;
@@ -1084,7 +1093,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .ways-section-position {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1095,6 +1104,7 @@ textarea {
   .ways-position {
     justify-content: flex-start;
     flex-direction: row;
+    padding-left: 15px;
   }
   .ways-card-position {
     width: 270px;
@@ -1120,7 +1130,7 @@ textarea {
   display: none;
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .our-work-position {
     display: block;
     padding-bottom: 22px;
@@ -1139,7 +1149,7 @@ textarea {
   }
   .our-work-image {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     margin-top: 50px;
   }
   .our-work-description {
@@ -1295,7 +1305,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .our-team-position {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1314,7 +1324,7 @@ textarea {
   }
   .our-team-members {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     flex-direction: row;
     width: auto;
   }
@@ -1472,7 +1482,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .our-clients {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -1482,6 +1492,7 @@ textarea {
     font-size: 36px;
   }
   .clients-position {
+    justify-content: space-around;
     flex-wrap: nowrap;
     margin-top: 50px;
   }
@@ -1489,10 +1500,10 @@ textarea {
     width: 170px;
   }
   .clients-logo__position:not(:nth-last-child(1)) {
-    margin-right: 30px;
+    margin-right: 0px;
   }
   .clients-logo__position:nth-child(2n + 1) {
-    margin-right: 30px;
+    margin-right: 0px;
   }
   .clients-logo__position:nth-child(5n - 2) {
     margin-top: 0px;
@@ -1719,7 +1730,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .footer__position {
     padding-bottom: 60px;
     padding-top: 60px;
@@ -1785,6 +1796,7 @@ textarea {
   .footer__position-link-sign {
     display: flex;
     justify-content: space-evenly;
+    align-items: baseline;
   }
   .footer__sign-logo-position {
     display: flex;
@@ -2032,7 +2044,7 @@ textarea {
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .portfolio__background {
     padding-bottom: 94px;
     padding-top: 94px;

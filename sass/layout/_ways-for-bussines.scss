@@ -76,7 +76,7 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .ways-section-position {
     padding-top: 94px;
     padding-bottom: 94px;
@@ -89,6 +89,7 @@
   .ways-position {
     justify-content: flex-start;
     flex-direction: row;
+    padding-left: 15px;
   }
 
   .ways-card-position {

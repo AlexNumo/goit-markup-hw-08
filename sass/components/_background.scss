@@ -1,13 +1,15 @@
-.business-background {
-  background-image: linear-gradient(
-      rgba(47, 48, 58, 0.4),
-      rgba(47, 48, 58, 0.4)
-    ),
-    url("../img/mobile_background.png");
-  background-size: cover;
-  height: max-content;
-  padding-bottom: 118px;
-  padding-top: 118px;
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .business-background {
+    background-image: linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../img/mobile_background.png");
+    background-size: cover;
+    height: max-content;
+    padding-bottom: 118px;
+    padding-top: 118px;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -25,7 +27,7 @@
   }
 }
 
-@media screen and (min-width: 769px) and (max-width: 1200px) {
+@media screen and (min-width: 769px) {
   .business-background {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -33,5 +35,8 @@
       ),
       url("../img/img_backgraund.png");
     background-size: cover;
+    padding-bottom: 118px;
+    padding-top: 118px;
+    padding-left: -15px;
   }
 }
