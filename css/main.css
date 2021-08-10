@@ -1661,7 +1661,7 @@ textarea {
 
 .footer-subscribe__input {
   background-color: inherit;
-  width: 100%;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   box-sizing: border-box;
