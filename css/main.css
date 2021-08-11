@@ -89,8 +89,8 @@ textarea {
 
 @media screen and (min-width: 1200px) {
   .container {
-    width: 1200;
-    margin: 0;
+    width: 1200px;
+    margin: 0 auto;
     padding: 0 auto;
   }
 }
@@ -1520,6 +1520,9 @@ textarea {
   .clients-logo__position:not(:last-child) {
     margin-right: 30px;
   }
+  .clients-logo__position:last-child {
+    margin: 0px 0px 0px 0px;
+  }
   .clients-logo__position:nth-child(3) {
     margin: 0px 30px 0px 0px;
   }
@@ -1717,18 +1720,16 @@ textarea {
   justify-content: center;
 }
 
-.footer__position-address-link-sign {
-  margin-top: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  .footer__position-address-link-sign {
-    margin-bottom: 60px;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .footer__subscribe-position-btn {
+    margin-top: 30px;
   }
 }
 
-.footer__position-subscribe {
-  margin-bottom: 60px;
+@media screen and (min-width: 320px) and (max-width: 1199px) {
+  .footer__position-address-link-sign {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1902,18 +1903,6 @@ textarea {
   flex-wrap: wrap;
 }
 
-.button__position-bort:not(:last-child) {
-  padding-right: 8px;
-}
-
-.button__position-bort:nth-child(5) {
-  padding-top: 15px;
-}
-
-.button__position-bort:nth-child(4) {
-  padding-top: 15px;
-}
-
 .content-picture-size {
   width: 450px;
 }
@@ -1939,7 +1928,6 @@ textarea {
 
 .content__position-block {
   flex-basis: calc((100% - 90px) / 3);
-  margin-bottom: 30px;
   position: relative;
   transition-duration: 250ms;
   transition-timing-function: 0.4, 0, 0.2, 1;
@@ -2029,6 +2017,21 @@ textarea {
   padding-top: 4px;
 }
 
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .button__position-bort:not(:last-child) {
+    margin-right: 8px;
+  }
+  .button__position-bort:nth-child(5) {
+    margin-top: 15px;
+  }
+  .button__position-bort:nth-child(4) {
+    margin-top: 15px;
+  }
+  .content__position-block:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .button__position {
     justify-content: center;
@@ -2078,7 +2081,8 @@ textarea {
     flex-wrap: nowrap;
   }
   .button__position-bort:not(:last-child) {
-    padding-right: 8px;
+    margin-right: 8px;
+    padding-right: 0px;
   }
   .button__position-bort:nth-child(5) {
     padding-top: 0px;
@@ -2093,6 +2097,7 @@ textarea {
     margin-top: 50px;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: -30px;
   }
   .content-maket {
     background-color: var(--background-color-member-card);
@@ -2108,15 +2113,12 @@ textarea {
   }
   .content__position-block {
     flex-basis: calc((100% - 90px) / 9);
-    margin-bottom: 30px;
     position: relative;
     transition-duration: 250ms;
     transition-timing-function: 0.4, 0, 0.2, 1;
     width: calc(100% - 30px)/3;
     display: flex;
-  }
-  .content__position-block:nth-child(3n+2) {
-    margin: 0px 25px 0px 25px;
+    margin-right: 30px;
   }
   .content-maket-position:hover {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
